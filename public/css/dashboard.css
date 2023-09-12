@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #375f74;
+    --color-background: #f6f6f9;
+    --poppins-font: 'Poppins', sans-serif;
+    --raleway-font: 'Raleway', sans-serif;
+    --inter-font: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c7c7c7;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: var(--color-background);
+    font-family: var(--inter-font);
+}
+
+.swal2-confirm {
+    background-color: #375f74 !important;
+}
+
+nav {
+    background-color: #375f74;
+}
+
+nav div .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 22px !important;
+    font-weight: bold;
+}
+
+nav div a img {
+    width: 30px;
+}
+
+nav .nav-link {
+    font-weight: 500;
+}
+
+nav .nav-link:hover {
+    color: #d9d9d9 !important;
+}
+
+nav .nav-item {
+    padding-left: 8px !important;
+}
+
+.table {
+    --bs-table-bg: transparent;
+}
+
+thead {
+    background-color: #375f7446;
+}
+
+tr:nth-child(even) {
+    background-color: #375f7414;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: bold;
+    background-color: #375f7446;
+}
+
+.list-group-item {
+    gap: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .list-group-item div {
+        max-width: 25%;
+    }
+}
+
+.list-group-item div span:first-child {
+    font-family: var(--raleway-font);
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.list-group-item div span:nth-child(2) {
+    font-weight: 400;
+}
+
+.list-group-item div {
+    display: flex;
+    align-items: center;
+}
+
+.icons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+#add-stock {
+    background-color: #375f74 !important;
+}
+
+.material-icons {
+    color: #375f74;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.material-icons-outlined {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#btnCollapse,
+#export-to-pdf {
+    background-color: #375f74 !important;
+    font-size: 14px !important;
+}
+
+#export-to-pdf div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.material-icons:active {
+    transform: scale(0.9);
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+}
+
+.btn-box input {
+    border: 2px solid #375f74;
+    outline: none;
+    width: 65px;
+    height: 22px;
+    border-radius: 50px;
+    padding: 8px;
+    padding-right: 24px;
+    font-size: 14px;
+    color: #375f74;
+}
+
+.btn-box .material-icons {
+    margin-left: -24px;
+}
+
+.flex-even {
+    flex: 1;
+}
+
+.stat {
+    font-family: var(--inter-font) !important;
+    font-weight: 400 !important;
+    color: rgb(3, 167, 3);
+}
+
+.remove button,
+.delete {
+    color: #b85858 !important;
+}
+
+.add button {
+    color: #58b868 !important;
+}
+
+.material-icons:hover {
+    color: black !important;
+}
+
+.add input {
+    border: 2px solid #58b868;
+}
+
+.remove input {
+    border: 2px solid #b85858;
+}
